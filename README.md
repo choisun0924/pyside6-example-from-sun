@@ -29,3 +29,7 @@ pyside6를 쉬운 예제로 공유합니다.
 
 ![image](https://user-images.githubusercontent.com/86217603/181405244-cd002e1b-94ce-4fd7-8d07-936c6b2248c7.png)
 
+6. pyside6는 해당 ui 파일을 바로 사용할수 없습니다. ui/main.ui를 ui_main.py로 변환을 해주도록 하겠습니다.
+- 프로그램 실행시 ui_main.py가 업데이트 되면서 실행됨
+- ui_main의 Ui_MainWindow Class를 import
+
