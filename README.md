@@ -32,4 +32,19 @@ pyside6를 쉬운 예제로 공유합니다.
 6. pyside6는 해당 ui 파일을 바로 사용할수 없습니다. ui/main.ui를 ui_main.py로 변환을 해주도록 하겠습니다.
 - 프로그램 실행시 ui_main.py가 업데이트 되면서 실행됨
 - ui_main의 Ui_MainWindow Class를 import
+- 실행시 파일이 없으면 위와 같이 자동 생성됩니다.
+
+![image](https://user-images.githubusercontent.com/86217603/181406308-73f1b6b4-c5a5-42b7-a167-7217ec3feb40.png)
+
+7. ui_main.py의 버튼등을 바로 사용할 수 없기 때문에 MainWindow Class에 Ui_MainWindow를 상속합니다. 그리고 self.setupUi Method를 사용합니다. 그래야 제작한 UI를 사용할 수 있습니다.
+
+![image](https://user-images.githubusercontent.com/86217603/181406614-0552094f-47de-4bf0-b4d9-88267e0f3815.png)
+
+8. 버튼을 한 번 사용해보겠습니다. 전에 pushButton이라는 이름으로 Button Class를 생성 했기 때문에 self.pushButton.method이름(연결함수) 이렇게 사용 가능합니다.
+
+![image](https://user-images.githubusercontent.com/86217603/181407036-a6be5db1-1ea9-4ed9-af85-f1988f2db97b.png)
+
+9. 버튼을 누를 경우 testButton을 print합니다.
+
+![image](https://user-images.githubusercontent.com/86217603/181407114-2132adf1-5c7e-46f6-abdf-839e5f3549df.png)
 
